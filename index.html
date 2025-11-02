@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EV Charger Animation</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main>
+    <section class="hero">
+      <div class="hero__content">
+        <h1>Lightning-Powered EV Charging</h1>
+        <p>
+          Watch a lightning bolt energise an EV charger before the future of mobility rolls in.
+        </p>
+      </div>
+      <svg class="hero__svg" viewBox="0 0 300 300" aria-hidden="true">
+        <path id="lightningPath" class="path path--lightning" d="M160 30 L110 150 H150 L120 270 L210 130 H170 L200 30 Z" />
+        <path id="chargerPath" class="path path--charger" d="M115 40 H185 A15 15 0 0 1 200 55 V200 A20 20 0 0 1 180 220 H140 V260 H180 V280 H120 V220 H120 A20 20 0 0 1 100 200 V55 A15 15 0 0 1 115 40 Z" />
+        <circle class="charger-port" cx="150" cy="110" r="22" />
+        <rect class="charger-port__center" x="142" y="102" width="16" height="16" rx="4" />
+      </svg>
+    </section>
+
+    <section class="car-scene" id="carScene">
+      <div class="scene-background"></div>
+      <div class="charger">
+        <div class="charger__head"></div>
+        <div class="charger__body">
+          <div class="charger__screen"></div>
+          <div class="charger__port"></div>
+        </div>
+        <div class="charger__base"></div>
+        <div class="charger__cable"></div>
+      </div>
+      <div class="car" aria-hidden="true">
+        <div class="car__body">
+          <div class="car__window car__window--front"></div>
+          <div class="car__window car__window--rear"></div>
+        </div>
+        <div class="car__wheel car__wheel--front"></div>
+        <div class="car__wheel car__wheel--rear"></div>
+      </div>
+      <p class="car-scene__caption">Scroll to bring the EV in for a charge.</p>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
