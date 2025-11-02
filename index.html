@@ -8,19 +8,64 @@
 </head>
 <body>
   <main>
-    <section class="hero">
-      <div class="hero__content">
-        <h1>Lightning-Powered EV Charging</h1>
-        <p>
-          Watch a lightning bolt energise an EV charger before the future of mobility rolls in.
-        </p>
+    <section class="intro scroll-section" aria-labelledby="introHeading" data-scroll-illustration>
+      <div class="intro__stage scroll-stage">
+        <div class="intro__content scroll-content">
+          <h2 id="introHeading">Charging Tomorrow, Today</h2>
+          <p>
+            We are preparing a full story about the fast-evolving energy ecosystem—from grid-ready infrastructure
+            to seamless driver experiences. Scroll to watch the fast-charge pillar sketch itself into place as the
+            narrative unfolds.
+          </p>
+        </div>
+        <svg class="intro__svg scroll-svg" viewBox="0 0 520 960" aria-hidden="true">
+          <g fill="none" class="intro__illustration">
+            <path class="path path--structure" data-start="0" data-end="0.22" d="M184 72 H332 A28 28 0 0 1 360 100 V648 A38 38 0 0 1 322 686 H256 V768 H328 V804 H164 V686 A38 38 0 0 1 126 648 V100 A28 28 0 0 1 154 72 Z" />
+            <path class="path path--detail" data-start="0.1" data-end="0.3" d="M204 176 H312 V296 H204 Z" />
+            <path class="path path--detail" data-start="0.18" data-end="0.34" d="M212 328 H304" />
+            <path class="path path--detail" data-start="0.22" data-end="0.38" d="M212 360 H304" />
+            <path class="path path--detail" data-start="0.26" data-end="0.42" d="M244 392 H272" />
+            <path class="path path--detail" data-start="0.34" data-end="0.5" d="M268 424 m -34 0 a34 34 0 1 1 68 0 a34 34 0 1 1 -68 0" />
+            <path class="path path--cable" data-start="0.42" data-end="0.68" d="M320 432 C380 476 412 540 408 604 S356 724 392 788 L428 856 L468 888" />
+            <path class="path path--detail" data-start="0.56" data-end="0.78" d="M184 768 H328" />
+            <path class="path path--accent" data-start="0.72" data-end="1" d="M144 820 H360" />
+          </g>
+        </svg>
       </div>
-      <svg class="hero__svg" viewBox="0 0 300 300" aria-hidden="true">
-        <path id="lightningPath" class="path path--lightning" d="M160 30 L110 150 H150 L120 270 L210 130 H170 L200 30 Z" />
-        <path id="chargerPath" class="path path--charger" d="M115 40 H185 A15 15 0 0 1 200 55 V200 A20 20 0 0 1 180 220 H140 V260 H180 V280 H120 V220 H120 A20 20 0 0 1 100 200 V55 A15 15 0 0 1 115 40 Z" />
-        <circle class="charger-port" cx="150" cy="110" r="22" />
-        <rect class="charger-port__center" x="142" y="102" width="16" height="16" rx="4" />
-      </svg>
+    </section>
+
+    <section class="hero" aria-labelledby="heroHeading">
+      <div class="hero__layout">
+        <div class="hero__content">
+          <h1 id="heroHeading">Lightning-Powered EV Charging</h1>
+          <p>
+            Experience the future forecourt: an EV coupe and SUV glide into a high-speed hub, powered by
+            intelligent energy orchestration.
+          </p>
+        </div>
+        <div class="hero__animation" aria-hidden="true">
+          <div class="hero__lane hero__lane--upper">
+            <div class="vehicle vehicle--car">
+              <div class="vehicle__body">
+                <span class="vehicle__window vehicle__window--front"></span>
+                <span class="vehicle__window vehicle__window--rear"></span>
+              </div>
+              <span class="vehicle__wheel vehicle__wheel--front"></span>
+              <span class="vehicle__wheel vehicle__wheel--rear"></span>
+            </div>
+          </div>
+          <div class="hero__lane hero__lane--lower">
+            <div class="vehicle vehicle--suv">
+              <div class="vehicle__body">
+                <span class="vehicle__window vehicle__window--front"></span>
+                <span class="vehicle__window vehicle__window--rear"></span>
+              </div>
+              <span class="vehicle__wheel vehicle__wheel--front"></span>
+              <span class="vehicle__wheel vehicle__wheel--rear"></span>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <section class="car-scene" id="carScene">
@@ -43,6 +88,26 @@
         <div class="car__wheel car__wheel--rear"></div>
       </div>
       <p class="car-scene__caption">Scroll to bring the EV in for a charge.</p>
+    </section>
+
+    <section class="info-block" aria-labelledby="networkHeading">
+      <div class="info-block__content">
+        <h2 id="networkHeading">Infrastructure Blueprint</h2>
+        <p>
+          Detailed engineering notes, rollout timelines, and site configuration guidelines will live here. Each block
+          will unpack how ultra-fast hubs integrate with city grids, commercial fleets, and residential communities.
+        </p>
+      </div>
+    </section>
+
+    <section class="info-block info-block--alt" aria-labelledby="experienceHeading">
+      <div class="info-block__content">
+        <h2 id="experienceHeading">Driver Experience Highlights</h2>
+        <p>
+          Future content will cover concierge services, adaptive pricing, energy insights, and more. Consider this
+          space a canvas for testimonials, data visualisations, and feature breakdowns once the program launches.
+        </p>
+      </div>
     </section>
   </main>
   <script src="script.js"></script>
